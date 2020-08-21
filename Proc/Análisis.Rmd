@@ -1,0 +1,19 @@
+---
+title: "Análisis"
+author: "Chopan"
+date: "20-08-2020"
+output: html_document
+---
+
+```{r, echo=FALSE}
+
+sink("Output/Tablas/Tabla1.txt")
+stargazer(data, type = "text", digits=1)
+sink()
+
+ggplot(data = data) +
+  geom_point(mapping = aes(Escala_Ingresos, y = Satisfaccion_Vida))
+dev.copy(png,"Output/Gráficos/Gráfico1.png",width=600,
+        height=600); dev.off()
+
+```

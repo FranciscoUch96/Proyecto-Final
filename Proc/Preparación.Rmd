@@ -1,0 +1,22 @@
+---
+title: "Preparación"
+author: "Chopan"
+date: "20-08-2020"
+output: html_document
+---
+
+
+```{r echo=FALSE, results= "hide"}
+install.packages("ggplot2",repos = "http://cran.us.r-project.org")
+library(ggplot2)
+install.packages("stargazer",repos = "http://cran.us.r-project.org")
+library(stargazer)
+load("~/trabajo ciencia abierta/ELSOC_W01_v3.10_R.RData")
+View(elsoc_2016)
+data=elsoc_2016[,c("s01","m30","m0_sexo")]
+names (data) = c("Satisfaccion_Vida", "Escala_Ingresos", "Género")
+data[data=="-999"]<- NA
+data[data=="-888"]<- NA
+data<-na.omit(data)
+```
+
