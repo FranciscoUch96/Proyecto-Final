@@ -1,2 +1,6 @@
 # Proyecto-Final
-Proyecto reproducible
+Proyecto reproducible, es importante señalar que la base de datos presente en el repositorio es un extracto de las variables de la Encuesta ELSOC que sirven para este trabajo, y no toda la encuesta ELSOC 2016. 
+Por su parte, la ruta para cargar la base de datos en el primer chunk del PaperFinal.Rmd, contempla una carpeta de mi computador particular: load("~/Proyecto Final/Proyecto-Final/Input/Data/proc_elsoc.RData")--> La parte que dice "Proyecto Final" debe ser modificada.
+El orden de las carpetas del repositorio es basado en el Protocolo IPO (para más información visitar https://juancarloscastillo.github.io/ipo/), por lo cual su estructura es la siguiente: en la carpeta Input se encuentra la bibiografía, base de datos, e imágenes utilizadas, en la carpeta Proc están los documentos que muestran la Preparación y el Análisis de los códigos de Rstudio utiizados para el proyecto. Por último, en la carpeta Output, se hallan los gráficos y las tablas generadas mediante código, en forma de imágenes.
+Además de esto, fuera de las carpetas se localiza el PaperFinal, en formato Rmd y html.
+Por último, este repositorio se encuentra también en la plataforma OSF: https://osf.io/pq936/
